@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "firstName": "muthu",
+      "lastName": "mk",
+      "email": "muthu@gmail.com",
+      "phoneNumber": "8946021225",
+      "salary": "120",
+      "id": "1"
+    },
+    {
+      "firstName": "muthu",
+      "lastName": "mani",
+      "email": "muthu@mani",
+      "phoneNumber": "13245",
+      "salary": "1000",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "firstName": "mk",
+      "lastName": "mk",
+      "email": "RMKRISHNAN@",
+      "phoneNumber": "muthu",
+      "salary": "1200"
+    },
+    {
+      "id": "1",
+      "firstName": "muthu",
+      "lastName": "krishnan",
+      "email": "muthu",
+      "phoneNumber": "108",
+      "salary": "1008"
+    },
+    {
+      "firstName": "test",
+      "lastName": "a",
+      "email": "test@a",
+      "phoneNumber": "123456789",
+      "salary": "12305",
+      "id": "4"
+    },
+    {
+      "id": 1,
+      "firstName": "chotta",
+      "lastName": "bheem",
+      "email": "dolakbur@gmail.com",
+      "phoneNumber": "123456789",
+      "salary": "12345"
+    },
+    {
+      "id": 1,
+      "firstName": null,
+      "lastName": null,
+      "email": null,
+      "phoneNumber": null,
+      "salary": null
+    }
+  ]
+}
