@@ -20,18 +20,20 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let row of employeeData">
+        @for (row of employeeData; track row) {
+        <tr>
             <td>{{row.id}}</td>
-            <td>{{row.firstName}}</td>
-            <td>{{row.lastName}}</td>
+            <td>{{row.firstName | titlecase}}</td>
+            <td>{{row.lastName | titlecase}}</td>
             <td>{{row.email}}</td>
             <td>{{row.phoneNumber}}</td>
-            <td>{{row.salary}}</td>
+            <td>{{row.salary | currency:'INR'}}</td>
             <td>
                 <button class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="onEdit(row)">Edit</button>
                 <button (click)="deleteEmployee(row)" class="btn btn-danger mx-3">Delete</button>
             </td>
         </tr>
+    }
     </tbody>
 </table>
 
@@ -70,8 +72,14 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancel">Close</button>
-                <button type="button" *ngIf="showAdd" class="btn btn-primary" (click)="postEmployeeDetails()">Add</button>
-                <button type="button" *ngIf="showUpdate"  class="btn btn-primary" (click)="updateEmployeeDetails()">Update</button>
+                @if (showAdd) {
+                    <button type="button"  class="btn btn-primary" (click)="postEmployeeDetails()">Add</button>
+
+                }
+                @else {
+                    <button type="button" class="btn btn-primary" (click)="updateEmployeeDetails()">Update</button>
+
+                }
 
             </div>
         </div>

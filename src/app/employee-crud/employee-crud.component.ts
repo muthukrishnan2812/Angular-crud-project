@@ -41,6 +41,10 @@ export class EmployeeCrudComponent implements OnInit { // Implement OnInit
 
   postEmployeeDetails() {
     // Populate employeeModelObj with form values
+    if (!this.formValue.value.firstName || !this.formValue.value.lastName || !this.formValue.value.email || !this.formValue.value.phoneNumber || !this.formValue.value.salary) {
+      alert("Please fill in all fields");
+      return;
+    }
     this.employeeModelObj.id = this.employeeIdCounter++;
     this.employeeModelObj.firstName = this.formValue.value.firstName;
     this.employeeModelObj.lastName = this.formValue.value.lastName;

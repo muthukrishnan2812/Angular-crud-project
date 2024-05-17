@@ -2,14 +2,6 @@
   "posts": [
     {
       "firstName": "muthu",
-      "lastName": "mk",
-      "email": "muthu@gmail.com",
-      "phoneNumber": "8946021225",
-      "salary": "120",
-      "id": "1"
-    },
-    {
-      "firstName": "muthu",
       "lastName": "mani",
       "email": "muthu@mani",
       "phoneNumber": "13245",
@@ -25,7 +17,7 @@
       "salary": "1200"
     },
     {
-      "id": "1",
+      "id": "4",
       "firstName": "muthu",
       "lastName": "krishnan",
       "email": "muthu",
@@ -41,7 +33,7 @@
       "id": "4"
     },
     {
-      "id": 1,
+      "id": 5,
       "firstName": "chotta",
       "lastName": "bheem",
       "email": "dolakbur@gmail.com",
@@ -50,11 +42,11 @@
     },
     {
       "id": 1,
-      "firstName": null,
-      "lastName": null,
-      "email": null,
-      "phoneNumber": null,
-      "salary": null
+      "firstName": "muthu",
+      "lastName": "krishnan",
+      "email": "rmkrishnan2812@gmail.com",
+      "phoneNumber": "8946021225",
+      "salary": "1236645644"
     }
   ]
 }
